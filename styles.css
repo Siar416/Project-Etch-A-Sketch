@@ -1,11 +1,19 @@
 .title {
     text-align: center;
 }
-
 #container {
     width: 80%;
     height: 80vh;
     overflow: auto;
     border: 1px solid black;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.divs {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+}
+
