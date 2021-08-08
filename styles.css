@@ -9,11 +9,13 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
 }
 
 .divs {
     width: 16px;
     height: 16px;
-    background-color: red;
+    border: 1px solid grey;
+    margin: 1px;
 }
-

@@ -1,22 +1,21 @@
 let container = document.querySelector('#container');
 
-let div = document.createElement('div');
-div.className = 'divs';
-container.appendChild(div);
-
 function createDiv() {
-    let div1 = document.createElement('div');
-    div1.className = 'divs';
-    container.appendChild(div1);
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 684; i++) {
         let div2 = document.createElement('div');
-        div2.className = 'divs';
         container.appendChild(div2);
+            div2.className = 'divs';
+            container.appendChild(div2);
+        }
+        for (let j = 0; j < 684; j++) {
+            let div3 = document.createElement('div');
+            container.appendChild(div3);
+                div3.className = 'divs';
+                container.appendChild(div3);
+        }
     }
-}
-
 createDiv();
 
-
+let allDivs = document.getElementsByClassName('divs');
 
