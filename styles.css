@@ -18,4 +18,11 @@
     height: 16px;
     border: 1px solid grey;
     margin: 1px;
+    display: inline-grid;
+}
+
+#reset {
+    position: absolute;
+    top: 250px;
+    left: 60px;
 }
