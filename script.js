@@ -1,9 +1,10 @@
 let container = document.querySelector('#container');
 let allDivs = document.getElementsByClassName('divs');
 let resetBTN = document.getElementById('reset');
+let colorFul = document.getElementById('colorful');
+let clear = document.getElementById('clear');
 
 function createDiv() {
-
     for (let i = 0; i < 1406; i++) {
         let div2 = document.createElement('div');
         container.appendChild(div2);
@@ -17,6 +18,7 @@ function createDiv() {
                 container.appendChild(div3);
         }
     }
+
 createDiv();
 
 // default
@@ -30,6 +32,37 @@ for(let i = 0; i < allDivs.length; i++) {
 for(let i = 0; i < allDivs.length; i++) {
     resetBTN.addEventListener('click', () => {
         allDivs[i].style.backgroundColor = 'white';
+        allDivs[i].onmouseenter = function(e) {
+            e.target.style.backgroundColor = 'grey';
+        }
     });
 }
+
+// colorful button
+for (let i = 0; i < allDivs.length; i++) {
+    colorFul.addEventListener('click', () =>{
+        allDivs[i].onmouseenter = function(e) {
+            e.target.style.backgroundColor = randomColors();
+        }
+    });
+}
+
+// random color picker I made with knowledge from last project - used the below randomcolor generator instead from stack overflow
+
+/*function randomColor() {
+    let array = ['red', 'green', 'blue'];
+    let random = Math.floor(Math.random()*3);
+    return array[random];
+}*/
+// random color generator 
+function randomColors() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random()*16)];
+    }
+    return color;
+}
+
+
 

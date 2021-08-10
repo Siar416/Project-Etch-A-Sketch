@@ -21,9 +21,11 @@
     display: inline-grid;
 }
 
-#reset {
-    position: absolute;
-    top: 250px;
-    left: 60px;
+#buttons {
+    text-align: center;
+    margin: 10px;
 }
 
+#clear {
+    background-color: white;
+}
