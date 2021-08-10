@@ -1,5 +1,6 @@
 let container = document.querySelector('#container');
 let allDivs = document.getElementsByClassName('divs');
+let resetBTN = document.getElementById('reset');
 
 function createDiv() {
 
@@ -18,8 +19,17 @@ function createDiv() {
     }
 createDiv();
 
+// default
 for(let i = 0; i < allDivs.length; i++) {
     allDivs[i].onmouseenter = function(e) {
         e.target.style.backgroundColor = 'grey';
     }
 }
+
+// reset button (figured it out on my own - super proud of myself - 8/10/2021)
+for(let i = 0; i < allDivs.length; i++) {
+    resetBTN.addEventListener('click', () => {
+        allDivs[i].style.backgroundColor = 'white';
+    });
+}
+
