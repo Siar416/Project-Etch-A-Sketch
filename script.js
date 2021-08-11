@@ -5,13 +5,13 @@ let colorFul = document.getElementById('colorful');
 let clear = document.getElementById('clear');
 
 function createDiv() {
-    for (let i = 0; i < 1406; i++) {
+    for (let i = 0; i < 500; i++) {
         let div2 = document.createElement('div');
         container.appendChild(div2);
             div2.className = 'divs';
             container.appendChild(div2);
         }
-        for (let j = 0; j < 1406; j++) {
+        for (let j = 0; j < 500; j++) {
             let div3 = document.createElement('div');
             container.appendChild(div3);
                 div3.className = 'divs';
