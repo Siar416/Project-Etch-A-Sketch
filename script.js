@@ -4,22 +4,23 @@ let resetBTN = document.getElementById('reset');
 let colorFul = document.getElementById('colorful');
 let clear = document.getElementById('clear');
 
+
 function createDiv() {
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 870; i++) {
         let div2 = document.createElement('div');
-        container.appendChild(div2);
             div2.className = 'divs';
             container.appendChild(div2);
         }
-        for (let j = 0; j < 500; j++) {
+        for (let j = 0; j < 879; j++) {
             let div3 = document.createElement('div');
-            container.appendChild(div3);
                 div3.className = 'divs';
                 container.appendChild(div3);
         }
     }
 
 createDiv();
+
+
 
 // default
 for(let i = 0; i < allDivs.length; i++) {
