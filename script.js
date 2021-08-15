@@ -3,8 +3,9 @@ let allDivs = document.getElementsByClassName('divs');
 let resetBTN = document.getElementById('reset');
 let colorFul = document.getElementById('colorful');
 let clear = document.getElementById('clear');
-
-
+let slider = document.getElementById('slider');
+let size;
+/*
 function createDiv() {
     for (let i = 0; i < 870; i++) {
         let div2 = document.createElement('div');
@@ -19,6 +20,21 @@ function createDiv() {
     }
 
 createDiv();
+*/
+
+function grid(size) {
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`
+
+    for (let i = 0; i < size * size; i++) {
+        let allDivs = document.createElement('div');
+        allDivs.className = 'divs';
+        container.appendChild(allDivs);
+    }
+}
+grid(30);
+
+
 
 
 

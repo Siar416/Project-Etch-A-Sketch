@@ -7,19 +7,16 @@
     overflow: hidden;
     border: 35px solid #669DB3FF;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     padding: 0;
     justify-content: center;
-    max-width: 960px;
+
 }
 
 
 .divs {
-    width: 16px;
-    height: 16px;
-    margin: 1px;
-    display: inline-grid;
+    display: grid;
+    border: 1px solid black;
 }
 
 #buttons {
